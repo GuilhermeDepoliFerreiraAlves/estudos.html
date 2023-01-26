@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+* { /*config globais das CSS*/
+    height: 100%;
+    background-image: linear-gradient(to top,#adadad,#818181,
+    #B1B5B5 85%);
+    background-attachment: fixed;;
+}   h1{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
