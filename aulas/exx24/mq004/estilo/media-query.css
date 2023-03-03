@@ -3,9 +3,66 @@
 
 /* typical device breakpoints
 ----------------------------- 
-Pequenas telas: ate 600px
-celular: de  600px ate 768px
-tablet: 768px ate 992px
-desktop: 992px ate 1200px
+Pequenas telas: ate 1200px
+celular: de  360px ate 812px
+tablet: 768px ate 1024px
+desktop: 1025px ate 1200px
 grandes telas: acima de 1200px
 */
+@media print {
+ body {
+    background-image: url(../imagens/back-print.jpg);/*desnesssario*/
+ } *{
+    font-family: 'Courier New', Courier, monospace;
+ }
+ main {
+    border: 1px solid;
+ }
+ main h1 {
+    text-shadow: none;
+    color: black;
+ }
+ #phone {display: none;}
+ #tablet {display: none;}
+ #print {display: block;}
+ #pc {display: none;}
+ #tv {display: none;}
+ 
+}
+@media screen and (min-width: 768px ) and (max-width: 1024px) {
+body {
+    background-image: url(../imagens/back-tablet.jpg);
+
+}
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+    
+
+}
+@media screen and (min-width: 1025px ) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+    
+    
+}
+@media screen and (min-width: 1200px) {
+body {
+    background-image: url(../imagens/back-tv.jpg);
+}
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+    
+
+}
